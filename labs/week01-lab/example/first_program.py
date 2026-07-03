@@ -29,7 +29,8 @@ print("My name is Your Name")
 print("First line")
 print("Second line")
 print("Third", "line", "with", "multiple", "arguments")
-
+print("My expected gpa of this term is " , 2.5)
+print(" 5 * 2.0")
 # Exercise 6: Comments Practice
 # Add comments above each print statement explaining what it does
 
