@@ -15,7 +15,7 @@ for letter in name:
     if letter == 'e' :
         vowels = vowels +1
 
-    if letter in [ 'a' 'e' 'i' 'o' 'u']:
+    if letter in [ 'a' ,'e', 'i', 'o', 'u']:
                 vowels = vowels +1
 print("Your name have ,vowels ,vowels")
 print(f"Your name have {vowels} vowels")
