@@ -1,18 +1,25 @@
 # Example 3: Mathematical function
+import math
 def calculate_triangle_area(height, base):
-    """Calculates and displays rectangle area"""
-    area = height * width
-    print(f"Triangle with height {height} and width {width}")
-    print(f"Area = {height} × {width} = {area}")
+    """Calculates and displays triangle area."""
+    if height < 0 or base < 0:
+        print("Error: Height and base cannot be negative.")
+        return None
+    area = 0.5 * height * base
+    print(f"Triangle with height {height} and base {base}")
+    print(f"Area = 0.5 × {height} × {base} = {area:.2f}")
     print()
-
-print("Calculating rectangle areas:")
-calculate_triangle_area(5, 3)
-calculate_triangle_area(10, 7)
-
+    return area
 def calculate_circle_area(radius):
-    pass
-
+    """Calculates and displays circle area."""
+    if radius < 0:
+        print("Error: Radius cannot be negative.")
+        return None
+    area = math.pi * (radius**2)
+    print(f"Circle with radius {radius}")
+    print(f"Area = π × {radius}² = {area:.2f}")
+    print()
+    return area
 # เขียน function ชื่อ calculate_sphere(radius):
 # คำนวณฟา ปริมาตร ของทรงกลม volum = 4.0 /3* ยร * radius ** 3
 # จากนั้นแสดงผลลัพธ์ที่เหมาะสมออกทางหน้าจอ
