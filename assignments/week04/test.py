@@ -5,17 +5,13 @@
 # what is you name?: Boonchoo
 # Your name hane 4 vowels.
 # รับค่า ชื่อจริง จากผู้ใช้
-name = "Boonchoo"
+# รับค่าชื่อจริงจากผู้ใช้
+name = input("What is your name?: ")
 vowels = 0
+
 for letter in name:
-    print(f" ตัวอักษร: { letter}")
-    if letter == 'a' or letter == 'A': 
-        vowels = vowels +1
+    print(f"ตัวอักษร: {letter}")
+    if letter.lower() in ['a', 'e', 'i', 'o', 'u']:
+        vowels = vowels + 1
 
-    if letter == 'e' :
-        vowels = vowels +1
-
-    if letter in [ 'a' ,'e', 'i', 'o', 'u']:
-                vowels = vowels +1
-print("Your name have ,vowels ,vowels")
-print(f"Your name have {vowels} vowels")
+print(f"Your name has {vowels} vowels.")
